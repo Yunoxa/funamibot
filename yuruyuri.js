@@ -2,7 +2,7 @@ module.exports = {
 	name: 'yuruyuri',
     cooldown: 5,
     aliases: ['yryr', 'yryrgif'],
-    description: 'Posts a random Yuru Yuri gif (Working on it)',
+    description: 'Posts a random Yuru Yuri gif',
     
 	execute(message) {
         var GphApiClient = require('giphy-js-sdk-core')
