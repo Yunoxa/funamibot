@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'kyodoru',
 	description: 'Summons the mighty Kyodoru',
-	execute(message, args) {
+	execute(message) {
 		message.channel.send ({files: ["./Images/kyodoru.png"]})
 	},
 };
