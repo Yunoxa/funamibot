@@ -1,0 +1,9 @@
+v0.111
+- Added "yryr" and "yryrgif" aliases for the "yuruyuri" command
+- Cleaned up some of the code a tiny bit :)
+
+v0.11
+-Added "yuruyuri" command which displays a yuru yuri gif
+
+v0.10 
+- Added ChangeLog
