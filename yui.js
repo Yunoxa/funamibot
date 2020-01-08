@@ -1,6 +1,7 @@
+number = 112;
 module.exports = {
     name: 'yui',
-description: `Send an image featuring the greatest girl, Yui Funami. Currently 112 unique images available.`,
+description: `Send an image featuring the greatest girl, Yui Funami. Currently ${number} unique images available.`,
 guildOnly: false,
 cooldown: 1,
 execute(message) {
