@@ -14,7 +14,12 @@ module.exports = {
 
 
 		const avatarList = message.mentions.users.map(user => {
-			return `${user.username}'s avatar: <${user.displayAvatarURL}>`;
+			const avatarEmbed2 = new Discord.RichEmbed()
+			.setTitle("Users avatar")
+			.setImage(user.displayAvatarURL);
+
+			
+			return message.channel.send(avatarEmbed2)
 		});
 
 		message.channel.send(avatarList);
