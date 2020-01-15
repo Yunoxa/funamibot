@@ -1,3 +1,9 @@
+v0.131
+- Added 2 new Yui images
+
+v0.13
+- Added 200+ new Yui images
+
 v0.12
 - Updated avatar command to show the avatar image instead of sending the url of a mentioned user
 
@@ -13,4 +19,3 @@ v0.11
 
 v0.10 
 - Added ChangeLog
-
