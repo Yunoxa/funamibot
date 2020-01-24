@@ -4,7 +4,7 @@ module.exports = {
 	guildOnly: true,
 	execute(message, args) {
 	   
-		if (message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])) {
+		
 			if (!args.length) return message.channel.send(`You didn't pass any command to reload, ${message.author}!`);
 			const commandName = args[0].toLowerCase();
 			const command = message.client.commands.get(commandName)
@@ -25,7 +25,7 @@ module.exports = {
 			message.channel.send(`Command \`${commandName}\` was reloaded!`);
 
 
-		}
+		
 
 	},
 };
