@@ -1,3 +1,6 @@
+v0.14
+- Added the "yuin" command. Allows you to search for specific yui images by using the image number
+
 v0.131
 - Added 2 new Yui images
 
@@ -19,3 +22,4 @@ v0.11
 
 v0.10 
 - Added ChangeLog
+
