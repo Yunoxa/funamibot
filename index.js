@@ -1,5 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const { prefix, token } = require('./config.json');
 
 const cooldowns = new Discord.Collection();
 
@@ -24,6 +25,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	console.log(`used ${message}`)
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -81,6 +83,7 @@ try {
 }
     
 }); 
+
 
 
 //logs in
