@@ -1,3 +1,10 @@
+v0.20
+- Added the sentence command which generates a random sentence.
+- Changed Yui command to say "me rn" and then give the image number
+
+v0.15
+- Added 44 new Yui images
+
 v0.14
 - Added the "yuin" command. Allows you to search for specific yui images by using the image number
 

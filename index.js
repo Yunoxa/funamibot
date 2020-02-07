@@ -47,6 +47,7 @@ client.on('message', message => {
 	return message.channel.send(reply);
 }
 
+
 //Checks if cooldowns collection has command set in it, if not it's added in
 if (!cooldowns.has(command.name)) {
 	cooldowns.set(command.name, new Discord.Collection());
@@ -85,6 +86,5 @@ try {
 }); 
 
 
-
 //logs in
-client.login(process.env.BOT_TOKEN);
+client.login(token);
