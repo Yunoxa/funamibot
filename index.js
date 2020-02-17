@@ -87,4 +87,4 @@ try {
 
 
 //logs in
-client.login(token);
+client.login(BOT_TOKEN);
