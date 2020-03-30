@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'avatar',
 	description: 'Get the avatar URL of the tagged user(s), or your own avatar.',
+	guildOnly: true,
 	aliases: ['icon', 'pfp'],
 	execute(message) {
 		const Discord = require('discord.js');

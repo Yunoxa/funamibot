@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'kick',
 	description: 'kick',
-	guildOnly: true,
+	guildOnly: false,
 	execute(message) {
 		
 		message.channel.send("kick");

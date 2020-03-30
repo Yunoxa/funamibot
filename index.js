@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-
+const { prefix, token } = require('./config.json');
 
 const cooldowns = new Discord.Collection();
 
@@ -27,6 +27,9 @@ client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	console.log(`used ${message}`)
 
+	
+	
+    
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
@@ -73,6 +76,7 @@ if (timestamps.has(message.author.id)) {
 timestamps.set(message.author.id, now);
 setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
+
 //Executes that command
 try {
 	command.execute(message, args);
@@ -87,4 +91,4 @@ try {
 
 
 //logs in
-client.login(BOT_TOKEN);
+client.login(token);
